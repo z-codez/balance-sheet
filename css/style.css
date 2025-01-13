@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #0a0a23;
+}
+
+/*styling to hide screen-reader-only Html*/
+span[class~="sr-only"] {
+    border: 0;
+    height: 1px;
+    width: 1px;
+    /*inset defines an inset rectangle*/
+    clip-path: inset(50%);
+    white-space: nowrap;
+    padding: 0;
+    position: absolute;
+    margin: -1px;
+}
+
+h1 {
+    max-width: 37.25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+h1 span:first-of-type {
+    font-size: 1.05rem;
+}
+
+h2 span:last-of-type {
+    font-size: 1.8rem;
+}
+
+section {
+    max-width: 40rem;
+}
