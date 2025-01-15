@@ -22,7 +22,7 @@ span[class~="sr-only"] {
 
 h1 {
     max-width: 37.25rem;
-    margin: 0 auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column-reverse;
     gap: 1rem;
@@ -37,5 +37,80 @@ h2 span:last-of-type {
 }
 
 section {
+    margin: 0 auto;
     max-width: 40rem;
+    border: 2px solid #D0D0D5;
+}
+
+section #years {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #0a0a23;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px;
+    text-align: end;
+}
+
+section #years .year {
+    padding-right: 20px;
+}
+
+.tables {
+    padding: 0 0.75rem 1rem 0.75rem;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+}
+
+.tables caption {
+    padding-left: 8px;
+    margin: 1rem 0;
+    color: #356EAF;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.tables tr.data{
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+
+.tables tr.data th {
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.tables th .description {
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+    padding-top: 16px;
+    padding-bottom: 12px;
+}
+
+.tables tr.data td {
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+tr[class="total"] {
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;
+}
+
+tr[class="total"]:hover {
+    background-color: #356EAF;
+}
+
+tr[class="total"]:last-of-type td {
+    width: 54px;
+}
+td.current {
+    font-style: italic;
 }
